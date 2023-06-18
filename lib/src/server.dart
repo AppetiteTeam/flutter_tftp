@@ -207,7 +207,7 @@ class TFtpServerSocket {
   }
 
   TransInfo _readFileNameAndTransType(List<int> data) {
-    List<List<int>> packetData = List.generate(2, (index) => List.empty());
+    List<List<int>> packetData = List.generate(2, (index) => []);
 
     int pos = -1;
     for (int val in data) {
